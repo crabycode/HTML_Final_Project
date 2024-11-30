@@ -6,6 +6,7 @@
   <title>Craby's Cookery</title>
   <link rel="icon" type="image/x-icon" href="craby's cookery.png">
   <style type="text/css">
+    
     #header-image{
       height: 50px;
       width: 50px;
@@ -104,7 +105,6 @@
       min-height: 100px;
     }
 
-    
     footer{
       text-align: center;
       background-color: lightblue;
@@ -113,34 +113,40 @@
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <nav>
       <img id="header-image" src="craby's cookery.png" alt="Craby's cookery logo">
       <h1>Craby's cookery!</h1>
       <ul>
-        <li><a href = #menu-section>Menu</a></li>
-        <li><a href = #order-section>Order Now</a></li>
+        <li><a href =#menu-section>Menu</a></li>
+        <li><a href =#order-section>Order Now</a></li>
       </ul>
     </nav>
     <img id="atmosphere-image" src="atmosphere.png" alt="Atmosphere in the restaurant">
   </header>
   <br> <br> <br>
 
+  <!-- Main -->
   <main>
+    <!-- Menu Section -->
     <section id="menu-section">
       <h2> Menu </h2>
+      <!-- Article 1 -->
       <article>
         <h3><i> Classic Crab Cakes </i></h3>
         <img src= "Classic_Crab_Cakes.png" alt="Classic Crab Cakes"><br>
         <p>Made with fresh crab meat, breadcrumbs, herbs, and a hint of lemon zest.<br> Served with a tangy remoulade sauce or aioli.
           </p><div class = price>17.99$</div>
       </article>
+      <!-- Article 2 -->
       <article>
         <h3><i> Crab Bisque </i></h3>
         <img src= "Crab_Bisque.png" alt="Crab Bisque"><br>
         <p>A creamy, flavorful soup made with crab meat, heavy cream, and aromatic spices.<br> Served with a slice of crusty bread for dipping.
           </p><div class = price>15.99$</div>
       </article>
+      <!-- Article 3 -->
       <article>
         <h3><i> Crab Pasta Alfredo </i></h3>
         <img src= "Crab_Pasta_Alfredo.png" alt="Crab Pasta Alfredo"><br>
@@ -150,6 +156,7 @@
       <br><br><br>
     </section>
 
+    <!-- Order Section -->
     <section id="order-section">
       <h2>Place your order</h2>
       <form>
@@ -161,13 +168,15 @@
         <label>Barbecue sauce<input type="checkbox"></label>
         <label>Mushroom sauce<input type="checkbox"></label>
         <br><h3>Any additional notes:</h3>
-        <textarea></textarea>
+        <textarea placeholder="Write any special requests here..."></textarea>
         <br>
         <input type="submit" value="Go to checkout!">
       </form>
     </section>
     <br><br><br>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p><i>Made with love by Craby</i></p>
   </footer>
