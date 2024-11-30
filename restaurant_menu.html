@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Craby's Cookery</title>
+  <link rel="icon" type="image/x-icon" href="craby's cookery.png">
+  <style type="text/css">
+    #header-image{
+      height: 50px;
+      width: 50px;
+    }
+    body{
+      background-image: linear-gradient(to bottom right, lightcyan, darkcyan);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background-color: lightblue;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+    h1{
+      font-size: 30px;
+      color: #003b5c;
+      font-weight: bold;
+    }
+    ul{
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+    ul li a{
+      text-decoration: none;
+      font-size: 20px;
+      color:#003b5c;
+    }
+    #atmosphere-image{
+      width:100%;
+    }
+    h2{
+      font-size: 50px;
+      color: #003b5c;
+    }
+
+    h3{
+      font-size: 35px;
+    }
+    #menu-section img{
+      width: 40%;
+      height: auto;
+      border-radius: 8px;
+    }
+    #menu-section{
+      font-size:20px;
+      color: #333;
+      margin: 10px 0;
+    }
+    #menu-section p{
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .price{
+      font-style:italic;
+      font-weight: bold;
+    }
+
+    #order-section {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 20px;
+    }
+    input[type="number"]{
+      border-radius: 5px;
+      font-size: 20px;
+    }
+    input[type="submit"] {
+      background-color: darkcyan;
+      color: white;
+      padding: 12px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+    textarea {
+      border-radius: 5px;
+      font-size: 20px;
+      min-height: 100px;
+    }
+
+    
+    footer{
+      text-align: center;
+      background-color: lightblue;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img id="header-image" src="craby's cookery.png" alt="Craby's cookery logo">
+      <h1>Craby's cookery!</h1>
+      <ul>
+        <li><a href = #menu-section>Menu</a></li>
+        <li><a href = #order-section>Order Now</a></li>
+      </ul>
+    </nav>
+    <img id="atmosphere-image" src="atmosphere.png" alt="Atmosphere in the restaurant">
+  </header>
+  <br> <br> <br>
+
+  <main>
+    <section id="menu-section">
+      <h2> Menu </h2>
+      <article>
+        <h3><i> Classic Crab Cakes </i></h3>
+        <img src= "Classic_Crab_Cakes.png" alt="Classic Crab Cakes"><br>
+        <p>Made with fresh crab meat, breadcrumbs, herbs, and a hint of lemon zest.<br> Served with a tangy remoulade sauce or aioli.
+          </p><div class = price>17.99$</div>
+      </article>
+      <article>
+        <h3><i> Crab Bisque </i></h3>
+        <img src= "Crab_Bisque.png" alt="Crab Bisque"><br>
+        <p>A creamy, flavorful soup made with crab meat, heavy cream, and aromatic spices.<br> Served with a slice of crusty bread for dipping.
+          </p><div class = price>15.99$</div>
+      </article>
+      <article>
+        <h3><i> Crab Pasta Alfredo </i></h3>
+        <img src= "Crab_Pasta_Alfredo.png" alt="Crab Pasta Alfredo"><br>
+        <p>Fresh crab meat tossed in a creamy Alfredo sauce with fettuccine or linguine.<br> Garnished with parsley and grated parmesan.
+          </p><div class = price>25.99$</div>
+      </article>
+      <br><br><br>
+    </section>
+
+    <section id="order-section">
+      <h2>Place your order</h2>
+      <form>
+        <label>Classic Crab Cakes<br><input type="number" min=0></label>
+        <label>Crab Bisque<br><input type = "number" min = 0></label>
+        <label>Crab Pasta Alfredo<br><input type = "number" min = 0></label>
+        <h3>Want some sauce?</h3>
+        <label>Garlic sauce<input type="checkbox"></label>
+        <label>Barbecue sauce<input type="checkbox"></label>
+        <label>Mushroom sauce<input type="checkbox"></label>
+        <br><h3>Any additional notes:</h3>
+        <textarea></textarea>
+        <br>
+        <input type="submit" value="Go to checkout!">
+      </form>
+    </section>
+    <br><br><br>
+  </main>
+  <footer>
+    <p><i>Made with love by Craby</i></p>
+  </footer>
+</body>
+</html>
